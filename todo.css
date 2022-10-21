@@ -55,9 +55,8 @@ body {
 }
 
 #cad p {
-    font-size: 40pt;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    font-size: 32pt;
+    margin-top: 0.5rem;
     color: rgb(61, 61, 61);
 }
 
@@ -85,7 +84,6 @@ body {
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 1.5rem;
     box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
     color: rgb(61, 61, 61);
 }

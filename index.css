@@ -58,7 +58,7 @@ body{
 
 #log p {
     font-size: 16pt;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: rgb(61, 61, 61);
 }
 
@@ -85,12 +85,12 @@ body{
     background: #e1e1e1;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 21pt;
+    padding: 13px;
+    font-size: 15pt;
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     
 }
 
@@ -100,12 +100,12 @@ body{
     background: #e1e1e1;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 21pt;
+    padding: 13px;
+    font-size: 15pt;
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #email {
@@ -114,12 +114,12 @@ body{
     background: #e1e1e1;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 21pt;
+    padding: 13px;
+    font-size: 15pt;
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #senha {
@@ -128,8 +128,8 @@ body{
     background: #e1e1e1;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 21pt;
+    padding: 13px;
+    font-size: 15pt;
     align-items: center;
     outline: none;
     box-sizing: border-box;
@@ -142,8 +142,8 @@ body{
     background: #e1e1e1;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 21pt;
+    padding: 13px;
+    font-size: 15pt;
     align-items: center;
     outline: none;
     box-sizing: border-box;
