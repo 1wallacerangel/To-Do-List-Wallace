@@ -7,15 +7,20 @@ document.addEventListener("keypress", function (e) {
     }
 });
 
-function logar(){
+const form = document.getElementById('form');
+const nome = document.getElementById('nome');
+const login = document.getElementById('login');
+const email = document.getElementById('email');
+const senha = document.getElementById('senha');
+const confsenha = document.getElementById('confsenha');
 
-    var login = document.getElementById('login').value;
-    var senha = document.getElementById('senha').value;
-
-    if(login == "admin" && senha == "admin"){
-        location.href = "todo.html";
-    }else{
-        alert('Usuario ou senha incorretos');
+function nomeValidar(){
+    if(nome.value.length < 10)
+    {
+        console.log("Nome menor que 10 caracteres");
     }
-
+    else
+    {
+        console.log("Nome Aceito");
+    }
 }
