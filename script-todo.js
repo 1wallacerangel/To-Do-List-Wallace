@@ -1,3 +1,12 @@
+document.addEventListener("keypress", function (e) {
+    if(e.key ==="Enter"){
+        const button = document.querySelector(".button");
+        
+        button.click();
+
+    }
+});
+
 function adicionar() {
     var conteudo = document.getElementById("texto").value;
     if (conteudo != "") {
@@ -43,11 +52,10 @@ function exibir() {
     document.getElementById("tarefas").style.display = "block";
 }
 
-document.addEventListener("keypress", function (e) {
-    if(e.key ==="Enter"){
-        const button = document.querySelector(".button");
-        
-        button.click();
-
-    }
-});
+function mostrarDados(){
+    console.log(localStorage.getItem('nome'))
+    console.log(localStorage.getItem('login'))
+    console.log(localStorage.getItem('email'))
+    console.log(localStorage.getItem('senha'))
+    console.log(localStorage.getItem('confsenha'))
+}
