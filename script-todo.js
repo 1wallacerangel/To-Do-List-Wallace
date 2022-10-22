@@ -45,17 +45,32 @@ function adicionar() {
 function cadastrar() {
     document.getElementById("cad").style.display = "block";
     document.getElementById("tarefas").style.display = "none";
+    document.getElementById("dados").style.display = "none";
 }
 
 function exibir() {
     document.getElementById("cad").style.display = "none";
     document.getElementById("tarefas").style.display = "block";
+    document.getElementById("dados").style.display = "none";
 }
 
 function mostrarDados(){
-    console.log(localStorage.getItem('nome'))
-    console.log(localStorage.getItem('login'))
-    console.log(localStorage.getItem('email'))
-    console.log(localStorage.getItem('senha'))
-    console.log(localStorage.getItem('confsenha'))
+    document.getElementById("cad").style.display = "none";
+    document.getElementById("tarefas").style.display = "none";
+    document.getElementById("dados").style.display = "block";
+
+    var nomeDado = (localStorage.getItem('nome'));
+    var loginDado = (localStorage.getItem('login'));
+    var emailDado = (localStorage.getItem('email'));
+    var senhaDado = (localStorage.getItem('senha'));
+
+    var p1 = document.getElementById("p1");
+    var p2 = document.getElementById("p2");
+    var p3 = document.getElementById("p3");
+    var p4 = document.getElementById("p4");
+
+    p1.innerText = "Nome: " + nomeDado;
+    p2.innerText = "Login: " + loginDado;
+    p3.innerText = "Email: " + emailDado;
+    p4.innerText = "Senha: " + senhaDado;
 }

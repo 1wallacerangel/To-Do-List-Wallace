@@ -113,8 +113,6 @@ function compareSenha(){
         span[4].style.display="none";
         var senhaSave = document.querySelector("#senha").value;
         localStorage.setItem('senha', senhaSave);
-        var confsenhaSave = document.querySelector("#confsenha").value;
-        localStorage.setItem('confsenha', confsenhaSave);
     }
     else
     {
