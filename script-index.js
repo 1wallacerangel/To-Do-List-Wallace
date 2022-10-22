@@ -11,7 +11,8 @@ const form = document.getElementById('form');
 const nome = document.getElementById('nome');
 const login = document.getElementById('login');
 const email = document.getElementById('email');
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; /*regex email padrão*/
+/*const emailRegex = /\W|_/; /*Regex caractere especial*/ 
 const senha = document.getElementById('senha');
 const confsenha = document.getElementById('confsenha');
 const span = document.querySelectorAll('span');
@@ -21,22 +22,18 @@ form.addEventListener('submit', (e) => {
 
 })
 
-const nomeCheck = 0;
-var loginCheck = false;
-var emailCheck = false;
-var senhaCheck  = false;
-var confsenhaCheck = false;
-
-
 function entrar(){
-    if(nomeCheck.value == 1 )
+    if(nome.value,login.value,email.value,senha.value,confsenha.value ==  "" )
     {
-        console.log("if")
-        window.location.href = "todo.html";
+
+    }
+    else if(nome.value.length < 10 ,login.value.length > 10,!emailRegex.test(email.value),senha.value != confsenha.value)
+    {
+
     }
     else
     {
-        console.log("else")
+        window.location.href = "todo.html";
     }
 }
 
@@ -56,7 +53,6 @@ function nomeValidar(){
     {
         nome.style.border="3px solid #4ECA64";
         span[0].style.display="none";
-        nomeCheck.value == 1;
     }
 }
 
@@ -75,7 +71,6 @@ function loginValidar(){
     {
         login.style.border="3px solid #4ECA64";
         span[1].style.display="none";
-        loginCheck == true;
     }
 }
 
@@ -94,7 +89,7 @@ function emailValidar(){
     {
         email.style.border="3px solid #4ECA64";
         span[2].style.display="none";
-        emailCheck == true;
+       
     }
 }
 
@@ -112,8 +107,7 @@ function compareSenha(){
         confsenha.style.border="3px solid #4ECA64";
         span[3].style.display="none";
         span[4].style.display="none";
-        senhaCheck == true;
-        confsenhaCheck == true;
+
     }
     else
     {
