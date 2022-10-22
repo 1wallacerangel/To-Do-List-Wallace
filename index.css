@@ -63,16 +63,6 @@ body{
     color: rgb(61, 61, 61);
 }
 
-/*Erro no input*/
-
-.log.success input {
-    border: 3px solid #4ECA64;
-}
-
-.log.error input {
-    border: 3px solid #DB5A5A;
-}
-
 .log span {
     display: none;
     font-size: 14px;

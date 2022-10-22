@@ -11,9 +11,15 @@ const form = document.getElementById('form');
 const nome = document.getElementById('nome');
 const login = document.getElementById('login');
 const email = document.getElementById('email');
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 const senha = document.getElementById('senha');
 const confsenha = document.getElementById('confsenha');
 const span = document.querySelectorAll('span');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+})
 
 function nomeValidar(){
     
@@ -49,6 +55,24 @@ function loginValidar(){
     {
         login.style.border="3px solid #4ECA64";
         span[1].style.display="none";
+    }
+}
+
+function emailValidar(){
+    if(email.value == "")
+    {
+        email.style.border=" 0px solid #fff";
+        span[2].style.display="none";
+    }
+    else if(!emailRegex.test(email.value))
+    {
+        email.style.border="3px solid #DB5A5A";
+        span[2].style.display="block";
+    }
+    else
+    {
+        email.style.border="3px solid #4ECA64";
+        span[2].style.display="none";
     }
 }
 
