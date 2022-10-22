@@ -21,6 +21,25 @@ form.addEventListener('submit', (e) => {
 
 })
 
+const nomeCheck = 0;
+var loginCheck = false;
+var emailCheck = false;
+var senhaCheck  = false;
+var confsenhaCheck = false;
+
+
+function entrar(){
+    if(nomeCheck.value == 1 )
+    {
+        console.log("if")
+        window.location.href = "todo.html";
+    }
+    else
+    {
+        console.log("else")
+    }
+}
+
 function nomeValidar(){
     
     if(nome.value == "")
@@ -37,6 +56,7 @@ function nomeValidar(){
     {
         nome.style.border="3px solid #4ECA64";
         span[0].style.display="none";
+        nomeCheck.value == 1;
     }
 }
 
@@ -55,6 +75,7 @@ function loginValidar(){
     {
         login.style.border="3px solid #4ECA64";
         span[1].style.display="none";
+        loginCheck == true;
     }
 }
 
@@ -73,6 +94,7 @@ function emailValidar(){
     {
         email.style.border="3px solid #4ECA64";
         span[2].style.display="none";
+        emailCheck == true;
     }
 }
 
@@ -90,6 +112,8 @@ function compareSenha(){
         confsenha.style.border="3px solid #4ECA64";
         span[3].style.display="none";
         span[4].style.display="none";
+        senhaCheck == true;
+        confsenhaCheck == true;
     }
     else
     {
